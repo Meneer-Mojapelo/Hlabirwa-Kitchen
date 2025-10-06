@@ -1,0 +1,550 @@
+<!DOCTYPE html> 
+
+<html lang="en"> 
+
+<head> 
+
+    <meta charset="UTF-8" /> 
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /> 
+
+    <title>Hlabirwa</title> 
+
+    <style> 
+
+        body { 
+
+            font-family: Arial, sans-serif; 
+
+            margin: 0; 
+
+            padding: 0; 
+            
+            text-align: left;
+
+            background: peachpuff;
+            
+
+
+        } 
+
+        img {
+            height: auto;
+        }
+
+        .container {
+            text-align: left;
+            
+            
+        }
+
+ 
+
+        nav { 
+
+            background-color: green; 
+
+            padding: 10px; 
+
+            text-align: center; 
+
+        } 
+
+ 
+
+        nav a { 
+
+            color: white; 
+
+            margin: 0 15px; 
+
+            text-decoration: none; 
+
+            font-weight: bold; 
+
+            cursor: pointer; 
+
+        } 
+
+ 
+
+        .page { 
+
+            display: none; 
+
+            padding: 20px; 
+
+            text-align: center;
+
+
+        } 
+
+ 
+
+        .active { 
+
+            display: block; 
+
+        } 
+
+         
+
+        /* Basic styling for product cards and cart for better visibility */ 
+
+        .product-card { 
+
+            border: 100px solid #ccc; 
+
+            padding: 10px; 
+
+            margin: 10px; 
+
+            display: block; 
+
+            width: 200px; 
+
+            text-align: left; 
+
+        } 
+
+        #cart { 
+
+            border: 2px solid green; 
+
+            padding: 15px; 
+
+            margin-top: 20px; 
+
+            background-color: white; 
+
+        } 
+
+        .div{
+            text-align: centre;
+        }
+
+        .buy-btn {
+
+            background-color: rgb(230, 236, 230);
+            border: none;
+            border-radius: 5px;
+        }
+
+    </style> 
+
+</head> 
+
+<body> 
+
+ 
+
+    <nav> 
+
+        <a onclick="showPage('home')">Home</a> 
+
+        <a onclick="showPage('about')">About</a> 
+
+        <a onclick="showPage('products')">Products</a> 
+
+        <a onclick="showPage('contact')">Contact Us</a>
+
+    </nav> 
+
+ 
+
+    <div id="home" class="page active"> 
+         <h1 style ="color: green;">Welcome to MTYK</h1> 
+         <video width="70%" controls autoplay muted>
+    <source src="C:\Users\Admin\OneDrive - Richfield Graduate Institute of Technology\Home Page.mp4" type="video/mp4">
+    
+  </video>
+    
+
+    <p style="font-size: 20px;">
+MTYK is an urban agri-business based in Innisfree Park, Northen suburbs of Sandton.<br>Founded in 2013 by Lekau Nkoko, we specialize in organic produce cultivation and agro-processing, promoting a healthy lifestyle to consumers.<br>MTYK is run by a complementary mother-daughter duo: Lekau Nkoko serves as the heard farmer and agro-processor,while her daughter Motushi Nkoko manages the day-to-day business operations.<br><h2><b>Meet Our Team</b></h2> 
+
+<div>
+<img src="C:\Users\Admin\OneDrive - Richfield Graduate Institute of Technology\Lekau Nkoko.jpeg" alt="Picture of Lekau Nkoko">  
+<h1>Lekau Nkoko <i>(mother)<i></h1>
+</div>
+
+<div>
+<img src="C:\Users\BrianMojapelo\Pictures\Lekau Nkoko.jpeg" alt="Picture of Motushi Nkoko">  
+<h1>Motushi Nkoko <i>(daughter)<i></h1>
+
+</div>
+
+<h1>MTYK Staff</h1>
+ <img src="" alt="Picture of MTYK staff ">
+
+<footer>
+  <p>&copy; 2025 MTYK. All rights reserved — Brian Mojapelo </p>
+</footer>
+
+        </div> 
+
+ 
+
+    <div id="about" class="page"> 
+
+        <h1>About Page</h1> 
+        <video width="70%" controls autoplay muted>
+    <source src="C:\Users\Admin\OneDrive - Richfield Graduate Institute of Technology\about page video.mp4" type="video/mp4">
+    
+  </video>
+
+  <p>The farm used to be a cow kraal before the owner of the land donated the entire park to the city of Johannesburg.<br>The farm sits on a chunk of 2.5 hectares, the land is utilized to grow organic produce(vegetables and herbs), we also have a varienty of fruits trees<i>(70 fruit tress).</i><br>Innesfree Park has amazing fertile soil which allows MTYK to organically grow their vast vegetation which grows in a healthy eco-system with a variety of insects which have made the soil their home.<br>MTYK believes that the soil  should be left to be processed naturally by insects with a little enhancement from some natural mulch . <br><h2>Benefits of Natural Mulch</h2><p><br>1.Helps protect the soil<br>2.Helps with moisture retention.<br>MTYK places emphasis on native,perennial plants, which are loved and adored by local insect populations.<br>Innesfree Farm is a water land in its own right so we ultimately do not waste water during production.<br>We have a wet land in the heart of the land, a river on the outer edges<i>(near the farming land)</i> and multiple clean water connections.</p><br>
+  <p>
+    <h2>What is Agro-processing?</h2><br>MTYK uses the process to transform their fresh produce of Mulberries,Mint and Mangoes to increase their shelf life using preservation techniques <>
+  </p>
+
+  
+    
+    
+
+  <footer>
+  <p>&copy; 2025 MTYK. All rights reserved — Brian Mojapelo </p>
+</footer>
+        </div> 
+
+ 
+
+    <div id="products" class="page"> 
+
+        <h1>Products Page</h1> 
+
+        <p>MTYK promotes a healthy lifestyle for its customers...</p> 
+
+         
+
+        <div class="product-grid"> 
+
+             
+
+            <div class="product-card" data-id="1" data-name="Atchaar" data-price="80.00"> 
+                <img style="width: 300px; height:300px;"src="C:\Users\Admin\OneDrive - Richfield Graduate Institute of Technology\Pickle Atchaar.jpeg" alt="Pickle Atchaar">
+
+                <h2>Pickle Atchaar</h2> 
+
+                    <p style="font-family: Ariel, sans-seriff; font-size: 18px;  font-weight: bold;"> 
+
+                    1.Mango<br>2.Chilli<br> 
+
+                    MTYK grows and preserves the mangoes on the farm by mixing mango pieces with salt and tumeric which makes it have a longer shelf life.
+                    </p> 
+
+                <p class="product-price">R80.00</p> 
+
+                <button class="buy-btn">Buy Now<br>Reka<br>Thenga</button> 
+
+            </div> 
+
+             
+
+            <div class="product-card" data-id="2" data-name="Mamalad" data-price="60.00"> 
+                <img style="width: 300px; height:300px;" src="C:\Users\Admin\OneDrive - Richfield Graduate Institute of Technology\The Mamalade Jam.jpeg" alt="Image of Mmamalade Jam" style="text-align: centre">
+
+ 
+
+                <h2>Mamalad</h2> 
+                <p style="font-family: Ariel, sans-seriff; font-size: 18px;  font-weight: bold;">The Mamalade Jam is available in different flavours which are:<br>1.Citrus with cinamon.<br>2.Citrus with Aniseed<br>3.Blueberry<br>Agro-Process: <br>The peel and pulp of the "citrus" are boiled with water for a specific time to soften the peel and extract natural pectin.<br>Suger and Lemon are added to the mix and the mixture is then cooked by Lekau Nkoko until it reaches a specific <i>"jellying point".</i>
+                </p>
+
+                <p class="product-price">R60.00</p> 
+
+                <button class="buy-btn">Buy Now<br>Reka<br>Thenga</button> 
+
+            </div> 
+
+ 
+
+<div class="product-card" data-id="3" data-name="Mint Sauce" data-price="55.00"> 
+    <img style="width: 300px; height:300px;" src="C:\Users\Admin\OneDrive - Richfield Graduate Institute of Technology\Mint Sauces.jpeg" alt="Image of the Sauce">
+
+                <h2>Mint Sauce</h2> 
+                <p style="font-family: Ariel, sans-seriff; font-size: 18px;  font-weight: bold;">Ingredients:<br>1.Organic<br>2.Vinegar<br>3.Sugar<br><br>Agro-Process<br>Our organic Mint is chopped and mixed with boiling water followed by vinegar and sugar which is then left to steep for a set time.<br>The mixture is then poured into sterilized glass bottles for packaging.</p>
+
+                <p class="product-price">R55.00</p> 
+
+                <button class="buy-btn">Buy Now<br>Reka<br>Thenga</button> 
+
+            </div> 
+
+ 
+
+<div class="product-card" data-id="4" data-name="Morogo" data-price="60.00"> 
+    <img style="width: 300px; height:300px;" src="C:\Users\Admin\OneDrive - Richfield Graduate Institute of Technology\Morogo image.jpeg" alt="Image of Morogo">
+
+                <h2>Morogo<i>Preserved leaves</i></h2>
+                <p style="font-family: Ariel, sans-seriff; font-size: 18px;  font-weight: bold;">Types of Morogo:<br>1.Morogo wa Mopumpkin<br>2.Thepe<br>MTYK preserves the leaves the Ancient African way by placing them beneath direct sunlight.</p> 
+
+                <p class="product-price">R60.00</p> 
+
+                <button class="buy-btn">Buy Now<br>Reka<br>Thenga</button> 
+
+            </div> 
+
+ 
+
+<div class="product-card" data-id="5" data-name="Herbal Tea" data-price="53.00"> 
+    <img style="width: 300px; height:300px;" src="C:\Users\Admin\OneDrive - Richfield Graduate Institute of Technology\Herbal Tea.jpeg" alt="Ths is the image of the Herbal Tea">
+
+                <h2>Herbal Tea</h2> 
+                <p style="font-family: Ariel, sans-seriff; font-size: 18px;  font-weight: bold;">The herbal tea can be usedas an immune booster</p>
+
+                <p class="product-price">R53.00</p> 
+
+                <button class="buy-btn">Buy Now<br>Reka<br>Thenga</button> 
+
+
+ </div> 
+
+ 
+            <div id="cart"> 
+
+                <h2>Shopping Cart 🛒</h2> 
+
+                <ul id="cart-items"> 
+
+                    </ul> 
+
+                <p><strong>Total:</strong> <span id="cart-total">R0.00</span></p> 
+
+                <button id="clear-cart-btn">Clear Cart</button> 
+
+            </div> 
+
+            <footer>
+  <p>&copy; 2025 MTYK. All rights reserved — Brian Mojapelo </p>
+</footer>
+
+ 
+
+        </div> 
+
+    </div> 
+
+    <div id="contact" class="page"> 
+
+    <h1 style="color: green;">Contact Us On</h1> 
+
+    <div class="contact-container">
+        <div class="contact-form-section">
+            <h2>Get in Touch With Us</h2>
+            <form action="/submit-form" method="POST">
+                <input type="text" id="name" name="name" placeholder="Your Name" required>
+                <input type="tel" id="phone" name="phone" placeholder="Phone Number" required>
+                <input type="email" id="email" name="email" placeholder="Email" required>
+                <textarea id="message" name="message" placeholder="Message" rows="6" required></textarea>
+                <button type="submit" class="send-button">Send Now</button>
+            </form>
+        </div>
+    </div>
+
+    <div class="contact-info-section">
+        <h2 style="color: green;">Talk To Us</h2>
+
+        <div class="info-group">
+            <div class="details">
+                <p class="label">Email</p>
+                <p>admin@mtyk.co.za</p>
+                <p>info@mtyk.co.za</p>
+            </div>
+        </div>
+
+        <div class="info-group">
+            <div class="details">
+                <p class="label">Phone Number</p>
+                <p>0766137566</p>
+                <p>0814386896</p>
+            </div>
+        </div> 
+
+        <div class="info-group">
+            <div class="details">
+                <p class="label">Address</p>
+                <p>Innisfree Park</p>
+            </div>
+        </div>
+
+        <div class="follow-us">
+            <p class="label">Follow Us:</p>
+            <div class="social-links">
+                </div>
+        </div>
+
+        <footer>
+  <p>&copy; 2025 MTYK. All rights reserved — Brian Mojapelo </p>
+</footer>
+    </div>
+    <script> 
+
+        // Page Navigation Function (Existing) 
+
+        function showPage(pageId) { 
+
+            const pages = document.querySelectorAll('.page'); 
+
+            pages.forEach(page => page.classList.remove('active')); 
+
+            document.getElementById(pageId).classList.add('active'); 
+
+        } 
+
+ 
+
+        // 1. Get references to the cart elements 
+
+        const cartItemsList = document.getElementById('cart-items'); 
+
+        const cartTotalElement = document.getElementById('cart-total'); 
+
+        const clearCartButton = document.getElementById('clear-cart-btn'); 
+
+         
+
+        // FIX: Corrected selector to find all elements with class 'product-card' 
+
+        const productCards = document.querySelectorAll('.product-card'); 
+
+ 
+
+        let cart = []; // Array to store the products 
+
+ 
+
+        // Function to calculate and update the total (WAS MISSING) 
+
+        function updateCartTotal() { 
+
+            // Use reduce to sum up the price of every item in the cart array 
+
+            const total = cart.reduce((sum, item) => sum + item.price, 0); 
+
+ 
+
+            // Update the displayed total, showing two decimal places 
+
+            cartTotalElement.textContent = 'R' + total.toFixed(2); 
+
+        } 
+
+ 
+
+        // Function to render the cart contents 
+
+        function renderCart() { 
+
+            cartItemsList.innerHTML = ''; // Clear the current list 
+
+ 
+
+            // Loop and create an <li> for each item 
+
+            cart.forEach(item => { 
+
+                const listItem = document.createElement('li'); 
+
+                listItem.textContent = `${item.name} - R${item.price.toFixed(2)}`; 
+
+                cartItemsList.appendChild(listItem); 
+
+            }); 
+
+             
+
+            // FIX: Call updateCartTotal here to show the current total 
+
+            updateCartTotal();  
+
+        } 
+
+ 
+
+        // Function to add a product to the cart (CORRECTED LOGIC) 
+
+        function addToCart(productName, productPrice) { 
+
+            const newProduct = { 
+
+                name: productName, 
+
+                price: parseFloat(productPrice) // Ensure price is a number 
+
+            }; 
+
+ 
+
+            // FIX: Actually add the product to the cart array 
+
+            cart.push(newProduct); 
+
+             
+
+            // Re-render the cart display and total 
+
+            renderCart();  
+
+ 
+
+            console.log(`${productName} added to cart. Items in cart: ${cart.length}`); 
+
+        } 
+
+ 
+
+        // --- Event Listeners (CORRECTLY PLACED OUTSIDE FUNCTIONS) --- 
+
+ 
+
+        // 1. Loop through all product cards and attach the 'Buy Now' click event 
+
+        productCards.forEach(card => { 
+
+            const buyButton = card.querySelector('.buy-btn'); 
+
+ 
+
+            // Get product details from the data attributes 
+
+            const productName = card.getAttribute('data-name'); 
+
+            const productPrice = card.getAttribute('data-price'); 
+
+ 
+
+            // Attach the click event handler 
+
+            buyButton.addEventListener('click', () => { 
+
+                // Call addToCart with the correct product details 
+
+                addToCart(productName, productPrice); 
+
+            }); 
+
+        }); 
+
+ 
+
+        // 2. Clear Cart button listener 
+
+        clearCartButton.addEventListener('click', () => { 
+
+            cart = []; // Empty the cart array 
+
+            renderCart(); // Update the display 
+
+            console.log('Cart Cleared'); 
+
+        }); 
+
+ 
+
+    </script> 
+
+ 
+
+</body> 
+
+</html> 
